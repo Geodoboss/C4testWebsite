@@ -1,4 +1,48 @@
 body {
    background-color: hsl(0, 6%, 68%);
    font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+}
+img {
+   max-width: 100%;
+}
+.logo {
+   max-width: 60px;
+}
+.main-header {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   background-color: rgb(23, 218, 218);
+   align-items: flex-end;
+   padding: 10px 20px;
+
+}
+.navigation{
+      display: flex;
+   flex-flow: row wrap;
+
+}
+.navigation a{
+   text-decoration: none;
+   color: rgb(43, 18, 66);
+   padding: 15px;
+}
+.navigation a:hover {
+   color: rgb(177, 109, 25);
+   background-color: rgb(43, 18, 66) ;
+}
+.banner {
+   background-image: url(https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg);
+   background-position: center;
+   background-size: cover;
+   min-height: 50vh;
+   display: grid;
+   place-items: center;
+}
+.banner h1{
+   color: white;
+   background-color: black;
+   padding: 10px;
 }
