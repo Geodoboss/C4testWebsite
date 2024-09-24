@@ -44,6 +44,7 @@ img {
 .banner h1{
    color: white;
    background-color: black;
+   background-color: hsla( 0, 0%, 0%, 0.436);
    padding: 10px;
 }
 .home-content {
@@ -54,12 +55,41 @@ img {
    gap: 20px
 }
 .card-image {
-   padding: 1em;
+   aspect-ratio: 1/1;
+   object-fit: cover;
+   object-position: center;
 }
+.card {
+   border: 1px solid #747474;
+}
+.card-content {
+padding: 1em;
+display: flex;
+flex-direction: column;
+} 
 .card-button {
    background-color: black;
    color: white;
-
    display: block;
-   
-   }
+   padding: 0.5em;
+   text-align: center;
+   text-decoration: none;
+   border-radius: 5px;
+   width: 75%;
+   align-self: center;
+}
+
+.main-footer {
+   background-color:rgb(71, 55, 55);
+   padding: 1em;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between
+}
+.main-footer a {
+   color:rgb(238, 232, 232)
+   text-decoration: none;
+}
+.main-footer a:hover {
+   color: rgb(235, 235, 235)
+}
