@@ -1,0 +1,23 @@
+@media screen and ( max-width: 576px ) {
+
+    .home-content {
+        grid-template-columns: 1fr;
+
+    }
+    .navigation {
+        flex-direction: column;
+    }
+    .search {
+        width: 100%
+        display: flex
+    }
+    .search imput {
+        flex: 1;
+    }
+    .logo {
+        margin: auto;
+    }
+    .nav-button {
+        display: block;
+    }
+}

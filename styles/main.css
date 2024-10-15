@@ -33,6 +33,20 @@ img {
    color: rgb(177, 109, 25);
    background-color: rgb(43, 18, 66) ;
 }
+.nav-button {
+   align-self: center;
+   font-size: 32px;
+   padding: 5px;
+   display: block;
+   min-width: 48px;
+   background-color: transparent;
+   border-color: transparent;
+   display: none;
+}
+.nav-button:focus {
+   background: color #202020;
+   color:aliceblue
+}
 .banner {
    background-image: url(https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg);
    background-position: center;
