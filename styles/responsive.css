@@ -5,11 +5,35 @@
 
     }
     .navigation {
+        .main-header {
+            position: absolute;
+            top: 100%;
+            background-color:Gray(33, 96%, 71%);
+            flex-direction: column;
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height 0.5s;
+        }
+        .navigation.open {
+            max-height: 50vh;
+        }
+        .navigation a {
+            min-width: 100%;
+        }
         flex-direction: column;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 1s;
+    }
+    .navigation.open {
+        max-height: 50vh;
+    }
+    .navigation a {
+        min-width: 100%;
     }
     .search {
         width: 100%
-        display: flex
+        display: flex;
     }
     .search imput {
         flex: 1;
