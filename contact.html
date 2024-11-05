@@ -53,7 +53,23 @@
         </div>
         <div class="card">
             <div class="card-content">
-               
+                <form action="http://localhost\form-handler" method= "post">
+                    <label> for="username">Name</label>
+                    <input type="text" name="username" required id="username" placeholder="Jane Smith">
+                    <label for="Email">email Address</label>
+                    <input type="email" name="usermail" required id="usermail" placeholder="Jane.Smith@example.com">
+                    <label for="userpref"
+                        <input type="checkbox" name="preference" checked value="marketing" id="userpref">
+                        Are you a human?
+                    </label>
+                    <label for="Message">Message</label>
+                    <textarea name="message" id="message" placeholder="Well Hello there!" rows="5" cols="30"></textarea>
+                    <div class="form-buttons">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+
+                </form>
             </div>
         </div>
         <div class="card">
