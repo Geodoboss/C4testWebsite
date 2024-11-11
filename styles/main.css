@@ -1,6 +1,8 @@
 body {
-   background-color: hsl(0, 6%, 68%);
-   font-family: Arial, Helvetica, sans-serif;
+   background-color: bisque;
+   color: hsl(0, 0%, 11%);
+   /* font-family: Arial, Helvetica, sans-serif; */
+   font-family: "Montserrat", sans-serif;
    margin: 0px;
 }
 img {
@@ -11,54 +13,55 @@ img {
 }
 .main-header {
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
+   /* flex-direction: row;
+   flex-wrap: wrap; */
+   flex-flow: row wrap;
    justify-content: space-between;
-   background-color: rgb(23, 218, 218);
+   background-color: hsl(33, 96%, 71%);
    align-items: flex-end;
    padding: 10px 20px;
-
+   font-family: "PT Serif", serif;
 }
-.navigation{
-      display: flex;
+.navigation {
+   display: flex;
    flex-flow: row wrap;
-
 }
-.navigation a{
+.navigation a {
    text-decoration: none;
-   color: rgb(43, 18, 66);
+   color:hsl(33, 100%, 8%);
    padding: 15px;
 }
 .navigation a:hover {
-   color: rgb(177, 109, 25);
-   background-color: rgb(43, 18, 66) ;
+   color:hsl(33, 96%, 71%);
+   background-color: hsl(33, 100%, 8%);
 }
 .nav-button {
    align-self: center;
    font-size: 32px;
    padding: 5px;
-   display: block;
    min-width: 48px;
    background-color: transparent;
    border-color: transparent;
    display: none;
 }
 .nav-button:focus {
-   background: color #202020;
-   color:aliceblue
+   background-color: #202020;
+   color: #d7d5d5;
 }
 .banner {
-   background-image: url(https://images.pexels.com/photos/46160/field-clouds-sky-earth-46160.jpeg);
+   background-image: url("../images/pexels-jakkel-418831.jpg");
    background-position: center;
    background-size: cover;
    min-height: 50vh;
-   display: grid;
-   place-items: center;
+   /* display: grid;
+   place-items: center; */
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
 }
-.banner h1{
+.banner h1 {
    color: white;
-   background-color: black;
-   background-color: hsla( 0, 0%, 0%, 0.436);
+   background-color: hsla(0, 0%, 0%, 0.436);
    padding: 10px;
 }
 .home-content {
@@ -66,16 +69,14 @@ img {
    grid-template-columns: 1fr 1fr 1fr;
    max-width: 1200px;
    margin: 2em auto;
-   gap: 20px 
- }
- .contact-content {
+   gap: 20px;
+}
+.contact-content {
    display: grid;
-   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
    max-width: 1200px;
    margin: 2em auto;
-   gap: 20px 
-
-   }
+   gap: 20px;
 }
 .card-image {
    aspect-ratio: 1/1;
@@ -86,10 +87,10 @@ img {
    border: 1px solid #747474;
 }
 .card-content {
-padding: 1em;
-display: flex;
-flex-direction: column;
-} 
+   padding: 1em;
+   display: flex;
+   flex-direction: column;
+}
 .card-button {
    background-color: black;
    color: white;
@@ -103,16 +104,50 @@ flex-direction: column;
 }
 
 .main-footer {
-   background-color:rgb(71, 55, 55);
+   background-color: #202020;
    padding: 1em;
    display: flex;
    flex-direction: row;
-   justify-content: space-between
+   justify-content: space-between;
 }
 .main-footer a {
-   color:rgb(238, 232, 232)
+   color: #cfcfcf;
    text-decoration: none;
 }
 .main-footer a:hover {
-   color: rgb(235, 235, 235)
+   color: white;
+}
+.social-nav a {
+   color: yellow;
+   font-size: 1.2em;
+}
+/* contact form */
+#contact {
+   display: flex;
+   flex-direction: column;
+}
+#contact label {
+   font-weight: 500;
+}
+#contact input {
+   margin-bottom: 0.5em;
+   border: 1px solid #666666;
+   padding: 0.5em;
+}
+#contact input:focus, #contact textarea:focus {
+   outline: dashed 2px red;
+}
+.form-buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 1em;
+}
+.form-buttons button {
+   background-color: #202020;
+   padding: 0.5em;
+   color: #cccccc;
+   min-width: 10ch;
+   border: 1px solid transparent;
+   border-radius: 4px;
 }
