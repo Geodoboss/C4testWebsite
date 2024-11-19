@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Contact Us</title>
+    <title>About Page</title>
     <link rel="icon" href="icons/home-solid.png">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/responsive.css">
@@ -19,9 +19,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
-<body>
+<body class="about-page">
     <!-- <h1>Hello world</h1> -->
     <header class="main-header">
         <a href="/" class="logo">
@@ -35,45 +37,50 @@
             <button type="submit">Search</button>
         </form>
         <nav class="navigation" id="main-nav">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
+            <a href="index.html" >Home</a>
+            <a href="about.html" class="active">About</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
+    <!-- 
     <div class="banner">
-    </div>
-    <main class="contact-content">
+        <h1>Welcome</h1>
+    </div> 
+    -->
+    <!-- <div id="home-carousel" data-flickity='{"cellAlign": true, "contain" : true, "wrapAround": true, "autoPlay": 3000 }'>
+        <div class="slide">1</div>
+        <div class="slide">2</div>
+        <div class="slide">3</div>
+        <div class="slide">4</div>
+        <div class="slide">5</div>
+    </div> -->
+    <main class="about-content">
         <div class="card">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6629.297168898269!2d151.1849472763596!3d-33.821380716605475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12af1fe3b9b887%3A0x6fda02f3cc79cba1!2sTAFE%20NSW%20-%20St%20Leonards!5e0!3m2!1sen!2sau!4v1730163082986!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img class="card-image" src="images/510c929f-e33f-41c5-96a2-6a092e41fb83.jpg" alt="casual shoes">
             <div class="card-content">
-                <h4>Our Location</h4>
-                <p>Opening Hours</p>
+                <h4>Our history</h4>
+                <p>We are a newly opened busniss and we are ready to have the best customer service and to make history by selling
+                    unique shoes for the public
+                </p>
+                <!-- <a href="#" class="card-button">Buy it now</a> -->
             </div>
         </div>
         <div class="card">
+            <img class="card-image" src="images/700b0f05-183a-401a-9ae8-91d44a44382d.jpg" alt="basketball shoes">
             <div class="card-content">
-                <form action="http://localhost\form-handler" method= "post">
-                    <label> for="username">Name</label>
-                    <input type="text" name="username" required id="username" placeholder="Jane Smith">
-                    <label for="Email">email Address</label>
-                    <input type="email" name="usermail" required id="usermail" placeholder="Jane.Smith@example.com">
-                    <label for="userpref"
-                    <input type="checkbox" name="preference" checked value="marketing" id="userpref">
-                        Are you a human?
-                    </label>
-                    <label for="Message">Message</label>
-                    <textarea name="message" id="message" placeholder="Well Hello there!" rows="5" cols="30"></textarea>
-                    <div class="form-buttons">
-                        <button type="reset">Reset</button>
-                        <button type="submit">Submit</button>
-                    </div>
-
-                </form>
+                <h4>Our Team</h4>
+                <p>Our team are experts with all types of shoes big or small our experts can look after all your needs where ever its a disability or othotics our experts
+                    have your back!
+                </p>
+                <!-- <a href="#" class="card-button">Buy it now</a> -->
             </div>
         </div>
         <div class="card">
+            <img class="card-image" src="images/8721825c-4c3d-4bf1-96e5-4cb9c8d0ddc6.jpg" alt="formal shoes">
             <div class="card-content">
-                
+                <h4>Formal Shoes</h4>
+                <p>We have a wide varaty of busness shoes that will sute you and make you look smart!</p>
+                <!-- <a href="#" class="card-button">Buy it now</a> -->
             </div>
         </div>
     </main>

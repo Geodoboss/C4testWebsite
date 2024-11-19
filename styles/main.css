@@ -18,7 +18,7 @@ img {
    flex-wrap: wrap; */
    flex-flow: row wrap;
    justify-content: space-between;
-   background-color: hsl(33, 96%, 71%);
+   background-color: hsl(212, 70%, 44%);
    align-items: flex-end;
    padding: 10px 20px;
    font-family: "PT Serif", serif;
@@ -33,7 +33,7 @@ img {
    padding: 15px;
 }
 .navigation a:hover {
-   color:hsl(33, 96%, 71%);
+   color:hsl(180, 84%, 46%);
    background-color: hsl(33, 100%, 8%);
 }
 .nav-button {
