@@ -8,11 +8,11 @@ export default function OnlineOpsITWebsite() {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       {/* Header */}
-      <header className="p-6 flex justify-between items-center bg-blue-600 shadow-lg">
+      <header className="p-6 flex justify-between items-center bg-blue-600 shadow-lg text-white">
         <h1 className="text-3xl font-bold">OnlineOps IT</h1>
         <nav>
           <a href="#home" className="mx-4">Home</a>
-          <a href="#about" className="mx-4">About</a>
+          <a href="#about-page" className="mx-4">About</a>
           <a href="#services" className="mx-4">Services</a>
           <a href="#contact" className="mx-4">Contact</a>
         </nav>
@@ -22,7 +22,61 @@ export default function OnlineOpsITWebsite() {
       <section id="home" className="text-center py-20 bg-gradient-to-r from-blue-500 to-purple-600">
         <h2 className="text-5xl font-bold mb-4">Remote Computer Support</h2>
         <p className="text-lg mb-6">Fast, Reliable, and Secure IT Solutions</p>
-        <Button className="px-6 py-3 text-lg">Get Started</Button>
+        <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Button className="px-6 py-3 text-lg">Get Started</Button>
+        </motion.div>
       </section>
 
-      
+      {/* About Page */}
+      <section id="about-page" className="py-20 px-10 bg-gray-800 text-center">
+        <h2 className="text-4xl font-bold mb-6">Who We Are</h2>
+        <p className="max-w-3xl mx-auto mb-4">Hi, my name is Andre Geokjian.</p>
+        <p className="max-w-3xl mx-auto">
+          At OnlineOps IT, we are passionate about delivering top-notch remote IT support to businesses and individuals.
+          Our team of experts is dedicated to solving technical issues swiftly and effectively, allowing you to focus on what matters most.
+        </p>
+        <h3 className="text-2xl font-semibold mt-6 mb-4">Our Mission</h3>
+        <p className="max-w-3xl mx-auto">
+          To provide seamless, secure, and efficient IT solutions that enhance productivity and ensure peace of mind for our clients worldwide.
+        </p>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 px-10 bg-gray-800 text-center">
+        <h2 className="text-4xl font-bold mb-6">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card>
+            <CardContent>
+              <h3 className="text-2xl font-semibold">Virus Removal</h3>
+              <p>Keep your system clean and secure.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent>
+              <h3 className="text-2xl font-semibold">Software Installation</h3>
+              <p>I will install the best-priced and most suitable software for your needs.</p>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardContent>
+              <h3 className="text-2xl font-semibold">Remote IT Support</h3>
+              <p>Quick troubleshooting for all your tech needs.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 px-10 text-center">
+        <h2 className="text-4xl font-bold mb-6">Contact Us</h2>
+        <p>Email: support@onlineopsit.com</p>
+        <p>Phone: (00) 123456789</p>
+        <div className="flex justify-center mt-4 space-x-4">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaFacebook /></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaInstagram /></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" className="text-2xl"><FaTiktok /></a>
+        </div>
+      </section>
+    </div>
+  );
+}
