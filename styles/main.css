@@ -223,7 +223,7 @@ body {
     border-color: var(--van-dyke);
     border-width: 1px;
     border-style: solid;
-    border-radius: 0.4em;
+    border-radius: 0.8 pm;
 }
 #contact-form button {
     background-color: var(--van-dyke);
