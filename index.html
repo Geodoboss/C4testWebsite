@@ -1,97 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>OnlineOps IT - Home</title>
-        <link rel="stylesheet" href="styles.css">
-        <link rel="icon" href="DALL·E 2025-02-17 19.32.39 - A refined and straightforward modern tech logo for 'OnlineOps IT'. The design features a sleek network-themed icon with clean, minimalistic lines, sym">
-        <meta charset="UTF-8">
-        <meta name="author" content="OnlineOps IT">
-        <meta name="description" content="Providing top-notch online remote IT support and solutions.">
-        <meta name="keywords" content="IT support, remote services, tech solutions">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    </head>
-    <body>
-       <header class="main-header">
+<head>
+    <title>OnlineOps IT - Remote IT Support & Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/onlineops_logo.png">
+    <meta charset="UTF-8">
+    <meta name="author" content="OnlineOps IT">
+    <meta name="description" content="Providing top-notch online remote IT support and solutions for businesses of all sizes.">
+    <meta name="keywords" content="IT support, remote services, tech solutions, network security, cloud services, data recovery">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- Add a modern font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
             <a href="index.html" class="logo-link">
                 <img src="assets/onlineops_logo.png" alt="OnlineOps IT logo" class="logo">
             </a>
             <nav class="main-navigation">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="contact.html">Contact</a>
             </nav>
             <nav class="user-navigation">
-                <a href="login.html">Client Login</a>
-                <a href="support.html">Get Support</a>
+                <a href="support.html" class="btn btn-primary">Get Support</a>
             </nav>
-        </header>
-       <div class="main-content">
-            <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround" : true, "autoPlay" : 4000 }'>
-                <div class="slide one"><h1>Reliable IT Support</h1></div>
-                <div class="slide two"><h1>Remote Assistance</h1></div>
-                <div class="slide three"><h1>Secure Solutions</h1></div>
+            <button class="menu-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Hero Section with Carousel -->
+        <section class="hero-section">
+            <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true, "autoPlay": 4000, "prevNextButtons": true, "pageDots": true }'>
+                <div class="slide one">
+                    <div class="slide-content">
+                        <h1>Reliable IT Support</h1>
+                        <p>Professional solutions for your business technology needs</p>
+                        <a href="services.html" class="btn btn-primary">Our Services</a>
+                    </div>
+                </div>
+                <div class="slide two">
+                    <div class="slide-content">
+                        <h1>Remote Assistance</h1>
+                        <p>Get expert help from anywhere in the world</p>
+                        <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+                <div class="slide three">
+                    <div class="slide-content">
+                        <h1>Secure Solutions</h1>
+                        <p>Protecting your business with advanced security protocols</p>
+                        <a href="services.html#security" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
             </div>
-            <div class="content">
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive IT solutions for modern businesses</p>
                 <div class="grid-4">
                     <div class="card">
-                        <img class="card-image" src="DALL·E 2025-02-17 19.32.39 - A refined and straightforward modern tech logo for 'OnlineOps IT'. The design features a sleek network-themed icon with clean, minimalistic lines, sym" alt="Remote Support">
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/remote_support.jpg" alt="Remote Support">
+                        </div>
                         <div class="card-content">
                             <h4>Remote Support</h4>
-                            <p>Quick and efficient IT support from anywhere.</p>
-                            <a href="#">Learn More</a>
+                            <p>Quick and efficient IT support from anywhere. Our team of experts is ready to solve your technical issues 24/7.</p>
+                            <a href="services.html#remote" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-image" src="assets/network_security.jpg" alt="Network Security">
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/network_security.jpg" alt="Network Security">
+                        </div>
                         <div class="card-content">
                             <h4>Network Security</h4>
-                            <p>Protect your business with top-tier security solutions.</p>
-                            <a href="#">Learn More</a>
+                            <p>Protect your business with top-tier security solutions. Stay ahead of threats with our advanced monitoring systems.</p>
+                            <a href="services.html#security" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-image" src="assets/cloud_services.jpg" alt="Cloud Services">
-                        <div class="card-content">
-                            <h4>Cloud Solutions</h4>
-                            <p>Seamless cloud integration for your business.</p>
-                            <a href="#">Learn More</a>
+                        <div class="card-image-container">
+                            <img class="card-image" src="assets/cloud_services.jpg" alt="Cloud Services">
+                        </div>
+                            <a href="services.html#cloud" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     <div class="card">
-                        <img class="card-image" src="assets/data_recovery.jpg" alt="Data Recovery">
+                        <div class="card-image-container">
+                        </div>
                         <div class="card-content">
-                            <h4>Data Recovery</h4>
-                            <p>Recover lost data with our expert solutions.</p>
-                            <a href="#">Learn More</a>
+                            <a href="services.html#recovery" class="btn btn-text">Learn More <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-       </div>
-       <footer class="main-footer">
-           <div class="row">
-                <nav class="policies">
-                    <a href="privacy.html">Privacy Policy</a>
-                    <a href="terms.html">Terms of Service</a>
-                </nav>
-                <nav class="social">
-                    <a href="https://instagram.com/onlineopsit">
-                        <i class="fa-brands fa-instagram"></i>
-                        <span class="sr-only">Instagram</span>
-                    </a>
-                    <a href="https://tiktok.com/onlineopsit">
-                        <i class="fa-brands fa-tiktok"></i>
-                        <span class="sr-only">TikTok</span>
-                    </a>
-                    <a href="https://facebook.com/onlineopsit">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <span class="sr-only">Facebook</span>
-                    </a>
-                </nav>
-           </div>
-       </footer>
-    </body>
-</html>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to upgrade your IT support?</h2>
+                    <p>Contact us today for a free consultation and discover how OnlineOps IT can transform your business technology.</p>
+                    <a href="contact.html" class="btn btn-primary btn

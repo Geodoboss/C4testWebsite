@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Contact OnlineOps IT</title>
+    <title>Contact OnlineOps IT - Get Remote IT Support</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="DALL·E 2025-02-17 19.32.39 - A refined and straightforward modern tech logo for 'OnlineOps IT'. The design features a sleek network-themed icon with clean, minimalistic lines, sym">
+    <link rel="icon" href="assets/onlineops_logo.png">
     <meta charset="UTF-8">
     <meta name="author" content="OnlineOps IT">
-    <meta name="description" content="Contact OnlineOps IT for remote IT support and services.">
-    <meta name="keywords" content="IT support, online services, contact">
+    <meta name="description" content="Contact OnlineOps IT for professional remote IT support and services. We're ready to help with all your technology needs.">
+    <meta name="keywords" content="IT support, online services, contact, remote IT help, technical assistance">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -16,56 +16,232 @@
 <body>
     <header class="main-header">
         <a href="index.html" class="logo-link">
-            <img src="assets/OnlineOpsIT_Logo.png" alt="OnlineOps IT logo" class="logo">
+            <img src="assets/onlineops_logo.png" alt="OnlineOps IT logo" class="logo">
         </a>
         <nav class="main-navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <nav class="user-navigation">
+            <a href="login.html" class="btn btn-outline">Client Login</a>
+            <a href="support.html" class="btn btn-primary">Get Support</a>
         </nav>
     </header>
     
     <div class="main-content">
-        <div class="content">
-            <div class="grid-2">
-                <div class="card">
-                    <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;width:100%;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="card">
-                    <div class="card-content">
-                        <form id="contact-form" action="contact.php" method="post">
-                            <label for="username">Name</label>
-                            <input id="username" type="text" name="username" placeholder="Your Name" required>
-                            <label for="useremail">Email</label>
-                            <input id="useremail" type="email" name="useremail" placeholder="Your Email" required>
-                            <label for="usermessage">Message</label>
-                            <textarea id="usermessage" placeholder="Your Message" name="usermessage" rows="5" required></textarea>
-                            <button type="submit">Send</button>
-                        </form>
+        <div class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p class="subtitle">We're here to help with your IT needs</p>
+            </div>
+        </div>
+
+        <section class="contact-section container">
+            <div class="contact-intro">
+                <h2>How Can We Help?</h2>
+                <p>Whether you need immediate technical support, want to discuss our services, or have questions about how we can help your business, our team is ready to assist you.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-form-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3><i class="fas fa-paper-plane"></i> Send Us a Message</h3>
+                        </div>
+                        <div class="card-content">
+                            <form id="contact-form" action="contact.php" method="post">
+                                <div class="form-group">
+                                    <label for="username">Name</label>
+                                    <input id="username" type="text" name="username" placeholder="Your Name" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="useremail">Email</label>
+                                    <input id="useremail" type="email" name="useremail" placeholder="Your Email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="userphone">Phone (Optional)</label>
+                                    <input id="userphone" type="tel" name="userphone" placeholder="Your Phone Number">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <select id="subject" name="subject" required>
+                                        <option value="" disabled selected>Select a subject</option>
+                                        <option value="support">Technical Support</option>
+                                        <option value="quote">Request a Quote</option>
+                                        <option value="info">General Information</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="usermessage">Message</label>
+                                    <textarea id="usermessage" placeholder="Please describe how we can help you" name="usermessage" rows="5" required></textarea>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <h4>Contact Us</h4>
-                        <p>For IT support and inquiries, reach us at:</p>
-                        <p>
-                            <a href="tel:+1234567890"><i class="fa-solid fa-phone"></i> +1 234 567 890</a>
-                        </p>
-                        <p>
-                            <a href="mailto:support@onlineopsit.com"><i class="fa-solid fa-envelope"></i> support@onlineopsit.com</a>
-                        </p>
+                
+                <div class="contact-info-container">
+                    <div class="card contact-info">
+                        <div class="card-header">
+                            <h3><i class="fas fa-info-circle"></i> Contact Information</h3>
+                        </div>
+                        <div class="card-content">
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h4>Phone</h4>
+                                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                                    <p class="text-small">Available Monday-Friday, 8am-8pm EST</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p><a href="mailto:support@onlineopsit.com">support@onlineopsit.com</a></p>
+                                    <p class="text-small">We aim to respond within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="info-item">
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <h4>Live Support</h4>
+                                    <p><a href="support.html" class="btn btn-outline btn-small">Chat with an Expert</a></p>
+                                    <p class="text-small">For immediate assistance</p>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links">
+                                <h4>Connect With Us</h4>
+                                <div class="social-icons">
+                                    <a href="https://instagram.com/onlineopsit" aria-label="Instagram" class="social-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/onlineopsit" aria-label="TikTok" class="social-icon">
+                                        <i class="fa-brands fa-tiktok"></i>
+                                    </a>
+                                    <a href="https://facebook.com/onlineopsit" aria-label="Facebook" class="social-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card emergency-support" id="emergency">
+                        <div class="card-header alert">
+                            <h3><i class="fas fa-exclamation-circle"></i> Emergency Support</h3>
+                        </div>
+                        <div class="card-content">
+                            <p>Experiencing a critical IT issue that needs immediate attention?</p>
+                            <a href="tel:+1234567890" class="btn btn-alert">
+                                <i class="fas fa-phone"></i> Call Emergency Support
+                            </a>
+                            <p class="text-small">Available 24/7 for critical issues</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        
+        <section class="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
+        <section class="faq-section container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How quickly can I expect a response?</h3>
+                    <p>For general inquiries, we typically respond within 24 hours during business days. For emergency support, our team is available 24/7 and will respond as soon as possible.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do you offer support outside business hours?</h3>
+                    <p>Yes, our emergency support team is available 24/7 for critical issues. Standard support hours are Monday-Friday, 8am-8pm EST.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can you help with hardware issues remotely?</h3>
+                    <p>We can diagnose many hardware issues remotely and provide guidance. For physical repairs, we can recommend local trusted partners or arrange on-site support where available.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What information should I include in my support request?</h3>
+                    <p>Please include details about your system, a clear description of the issue, any error messages, and when the problem started. Screenshots are also very helpful.</p>
+                </div>
+            </div>
+        </section>
     </div>
     
     <footer class="main-footer">
-        <nav class="social">
-            <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
-        </nav>
+        <div class="footer-content container">
+            <div class="footer-logo">
+                <img src="assets/onlineops_logo.png" alt="OnlineOps IT logo" class="logo small">
+                <p>Professional IT solutions for modern businesses</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h5>Company</h5>
+                    <nav class="footer-nav">
+                        <a href="about.html">About Us</a>
+                        <a href="team.html">Our Team</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <h5>Services</h5>
+                    <nav class="footer-nav">
+                        <a href="services.html#remote">Remote Support</a>
+                        <a href="services.html#security">Network Security</a>
+                        <a href="services.html#cloud">Cloud Solutions</a>
+                        <a href="services.html#recovery">Data Recovery</a>
+                    </nav>
+                </div>
+                <div class="footer-column">
+                    <h5>Support</h5>
+                    <nav class="footer-nav">
+                        <a href="support.html">Help Center</a>
+                        <a href="faq.html">FAQ</a>
+                        <a href="login.html">Client Portal</a>
+                        <a href="contact.html#emergency">Emergency Support</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <nav class="policies">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <span class="copyright">© 2025 OnlineOps IT. All rights reserved.</span>
+            </nav>
+            <nav class="social">
+                <a href="https://instagram.com/onlineopsit" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://tiktok.com/onlineopsit" aria-label="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://facebook.com/onlineopsit" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </nav>
+        </div>
     </footer>
 </body>
 
